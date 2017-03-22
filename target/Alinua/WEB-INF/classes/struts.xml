@@ -2,9 +2,6 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-<constant name="struts.enable.SlashesInActionNames" value="true"/>
-<constant name="struts.mapper.alwaysSelectFullNamespace" value="false"/>
-<constant name="struts.patternMatcher" value="regex" />
 
 	
 	<package name="json" namespace="/" extends="json-default">
@@ -50,7 +47,28 @@
 	
 	</package>
 	
+	
 
+
+
+<constant name="struts.enable.SlashesInActionNames" value="true"/>
+<constant name="struts.mapper.alwaysSelectFullNamespace" value="false"/>
+<constant name="struts.patternMatcher" value="regex" />
+
+
+
+	<package name="json3" namespace="/user" extends="json-default">	
+		
+		
+	
+		<action name="*/execute2/*" class="SpringAction" method="execute5">
+		</action>
+		
+		
+		<action name="ac" class="SpringAction" method="execute4">
+		</action>
+
+	</package>
 
 	 
 	
